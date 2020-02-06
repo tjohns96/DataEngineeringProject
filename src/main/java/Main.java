@@ -15,11 +15,7 @@ public class Main {
                 Scanner s = new Scanner(repairsFile);
                 while (s.hasNextLine()) {
                     String next = s.nextLine();
-                    if (!(next.trim().isEmpty())) {
-                        System.out.println(next);
-                    } else {
-                        continue;
-                    }
+                    System.out.println(next);
                 }
             } else {
                 System.out.println("This file does not exist.");
